@@ -1,4 +1,10 @@
-# generator-mbf [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-mbf
+
+[![npm version](https://badge.fury.io/js/generator-mbf.svg)](https://badge.fury.io/js/generator-mbf)
+[![Coverage Status](https://coveralls.io/repos/github/MBFAssas/generator-mbf/badge.svg?branch=master)](https://coveralls.io/github/MBFAssas/generator-mbf?branch=master)
+[![Build Status](https://travis-ci.org/MBFAssas/generator-mbf.svg?branch=master)](https://travis-ci.org/MBFAssas/generator-mbf)
+[![dependencies Status](https://david-dm.org/MBFAssas/generator-mbf/status.svg)](https://david-dm.org/MBFAssas/generator-mbf)
+
 > Yeoman Generator for LaTeX MBF courses
 
 ## Installation
@@ -34,27 +40,27 @@ Take a look at this final structure:
 │- package.json
 │
 └── src
-	│- glossary.tex        # The glossary file
-	│- references.bib        # The reference file
-	│- ...
-	│
-	└── 1
-		│- main.tex    # First chapter global file
-		│- ...
+    │- glossary.tex        # The glossary file
+    │- references.bib        # The reference file
+    │- ...
+    │
+    └── 1
+        │- main.tex    # First chapter global file
+        │- ...
 
-	└── 2
-		│- main.tex    # Second chapter global file
-		│- ...
+    └── 2
+        │- main.tex    # Second chapter global file
+        │- ...
 
-	└── assets
-		│- figures.svg # Optionnal figures files
-		│- ...
+    └── assets
+        │- figures.svg # Optionnal figures files
+        │- ...
 
-	└── ...
+    └── ...
 
 └── dist
-	│- [PROJECT].pdf   # The final PDF file output
-	│- ...             # Some files used for compilation
+    │- [PROJECT].pdf   # The final PDF file output
+    │- ...             # Some files used for compilation
 
 ## Getting To Know Yeoman
 
@@ -65,14 +71,4 @@ Take a look at this final structure:
 
 ## License
 
-MIT © [Ghislain IRANYUMVA]()
-
-
-[npm-image]: https://badge.fury.io/js/generator-mbf.svg
-[npm-url]: https://npmjs.org/package/generator-mbf
-[travis-image]: https://travis-ci.org/MBFAssas/generator-mbf.svg?branch=master
-[travis-url]: https://travis-ci.org/MBFAssas/generator-mbf
-[daviddm-image]: https://david-dm.org/MBFAssas/generator-mbf.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/MBFAssas/generator-mbf
-[coveralls-image]: https://coveralls.io/repos/MBFAssas/generator-mbf/badge.svg
-[coveralls-url]: https://coveralls.io/r/MBFAssas/generator-mbf
+MIT © Ghislain.
