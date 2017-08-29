@@ -26,7 +26,7 @@ const docClasses = [
 ];
 
 const languages = [
-  'english', 'french'
+  'french', 'english'
 ];
 
 module.exports = class extends Generator {
@@ -69,7 +69,7 @@ module.exports = class extends Generator {
     },
     {
       name: 'authorName',
-      message: 'Prenom de l\'Auteur',
+      message: 'Prénom de l\'Auteur',
       validate: function (input) {
         return Boolean(input);
       }

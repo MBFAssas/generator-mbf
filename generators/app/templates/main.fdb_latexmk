@@ -1,0 +1,15 @@
+# Fdb version 3
+["pdflatex"] 1503970181 "main.tex" "/home/ghighi-du63000/Work/playground/generator-mbf/generators/app/templates/main.pdf" "main" 1503970182
+  "/etc/texmf/web2c/texmf.cnf" 1493608569 1101 af7716885e081ab43982cab7b4672c1a ""
+  "/home/ghighi-du63000/Work/playground/generator-mbf/generators/app/templates/main.aux" 1503970181 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd" 1454284088 2256 80ce1168fb4ce6a85583a9cf8972c013 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1503343927 31343 93828589fb0cea665e553ee5a17ad2d4 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1503343927 31343 93828589fb0cea665e553ee5a17ad2d4 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1503533423 3857056 db69beb6d3a7e56e94bbb2f162c413b8 ""
+  "main.tex" 1503970180 2761 bfc431bac0ebb9d7919c53e061cd50bf ""
+  (generated)
+  "main.log"
+  "/home/ghighi-du63000/Work/playground/generator-mbf/generators/app/templates/main.pdf"
+  "/home/ghighi-du63000/Work/playground/generator-mbf/generators/app/templates/main.log"

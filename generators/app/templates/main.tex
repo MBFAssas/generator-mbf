@@ -1,6 +1,6 @@
 %
 % <%= projectName %>
-% Written by <% authorName %>, <% authorSurName %>
+% Written by <%= authorName %>, <%= authorSurName %>
 % <%= projectUrl %>
 % Licensed under <%= license %> License
 %
@@ -9,12 +9,13 @@
 \documentclass[11pt,a4paper]{<%= docClass %>}
 \usepackage[utf8]{inputenc}
 \usepackage[<%= language %>]{babel}
-\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \usepackage{graphicx}
-\usepackage{eso-pic}
+\usepackage[cmintegrals,cmbraces]{newtxmath}
+\usepackage{ebgaramond-maths}
 \usepackage{ebgaramond}
-\usepackage[grey,ebgaramond]{quotchap}
+\usepackage[T1]{fontenc}
+\usepackage{eso-pic}
 \usepackage{blindtext}
 \usepackage{background}
 \usepackage{fancyhdr}
@@ -28,10 +29,13 @@
 \usepackage{moreverb} % Encoding
 \usepackage{listings} % Code
 \usepackage{color}    % Highlight
+\usepackage[grey,ebgaramond]{quotchap}
+
 
 
 \definecolor{numbercolor}{RGB}{205,85,85}
 \definecolor{textcolor}{RGB}{153,153,153}
+
 \colorlet{chaptergrey}{numbercolor}
 \renewcommand*\sectfont{\color{textcolor}}
 \backgroundsetup{
@@ -68,10 +72,10 @@ opacity=1
 
 
 % Config
-\newcommand{\docauthname}{<% authorName %>}
-\newcommand{\docauthsurname}{<% authorSurName %>}
-\newcommand{\docprofname}{<%ProfName %>}
-\newcommand{\docprofsurname}{<% ProfSurName %>}
+\newcommand{\docauthname}{<%= authorName %>}
+\newcommand{\docauthsurname}{<%= authorSurName %>}
+\newcommand{\docprofname}{<%= ProfName %>}
+\newcommand{\docprofsurname}{<%= ProfSurName %>}
 \newcommand{\doctitle}{<%= projectName %>}
 
 
