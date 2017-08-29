@@ -69,6 +69,9 @@ Take a look at this final structure:
  * Yeoman can be too opinionated at times but is easily convinced not to be.
  * Feel free to [learn more about Yeoman](http://yeoman.io/).
 
+```
+
+
 ## License
 
 MIT © Ghislain.
