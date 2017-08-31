@@ -34,27 +34,27 @@ Take a look at this final structure:
 │- package.json
 │
 └── src
-	│- glossary.tex        # The glossary file
-	│- references.bib        # The reference file
-	│- ...
-	│
-	└── 1
-		│- main.tex    # First chapter global file
-		│- ...
+    │- glossary.tex        # The glossary file
+    │- references.bib        # The reference file
+    │- ...
+    │
+    └── 1
+        │- main.tex    # First chapter global file
+        │- ...
 
-	└── 2
-		│- main.tex    # Second chapter global file
-		│- ...
+    └── 2
+        │- main.tex    # Second chapter global file
+        │- ...
 
-	└── assets
-		│- figures.svg # Optionnal figures files
-		│- ...
+    └── assets
+        │- figures.svg # Optionnal figures files
+        │- ...
 
-	└── ...
+    └── ...
 
 └── dist
-	│- [PROJECT].pdf   # The final PDF file output
-	│- ...             # Some files used for compilation
+    │- [PROJECT].pdf   # The final PDF file output
+    │- ...             # Some files used for compilation
 
 ## Getting To Know Yeoman
 

@@ -1,0 +1,90 @@
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey}                              % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage{xcolor}
+\usepackage[document]{ragged2e}
+\usepackage{blindtext}
+\usepackage{background}
+\usepackage[printwatermark]{xwatermark}
+\usepackage{datetime}  
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[<%= language %>]{babel}
+
+
+
+
+
+
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{<%= name %>}{<%= surname %>}
+\title{<%= projectName %>}                               % optional, remove / comment the line if not wanted
+\address{<%= adress %>,}{<%= zipncity %>.}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+<% if(mobile !== '-'){ %>
+\phone[mobile]{<%= mobile %>}                   % optional, remove / comment the line if not wanted
+<% } %>
+<% if(phone !== '-'){ %>
+\phone[fixed]{<%= phone %>}                    % optional, remove / comment the line if not wanted
+<% } %>
+<% if(email !== '-'){ %>
+\email{<%= email %>}
+<% } %>
+                               % optional, remove / comment the line if not wanted
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+<% if (images) { %>
+
+\backgroundsetup{
+contents={\includegraphics{./img/logo_big.png}},
+angle=0,
+scale=.5,
+color=grey,
+position={-1.4,-37},
+opacity=.5
+}
+
+\newwatermark*[page=1,color=red!1,angle=0,scale=1,xpos=0,ypos=120]{\includegraphics[scale=0.5,keepaspectratio]{./img/logomarg_op.png}}
+\newwatermark*[pages=2-\lastdocpage,color=red!1,angle=0,scale=1,xpos=0,ypos=-120]{\includegraphics[scale=0.5,keepaspectratio]{./img/logomarg_op.png}}
+
+<% } %>
+
+\addtolength{\topmargin}{-0.455in}
+\addtolength{\textheight}{1.75in}
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+\input{recipient}
+\input{body}
+
+
+\flushright
+\color{black!25}
+\makeletterclosing
+
+\end{document}
+
+
+%% end of file `template.tex'.

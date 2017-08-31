@@ -2,7 +2,7 @@
 'use strict';
 var assert = require('yeoman-assert');
 
-describe('can be imported without blowing up', function () {
+describe('Shit ! can it be imported without blowing up ?', function () {
   it('latex', function () {
     var app = require('../generators/app');
     assert(app !== undefined);

@@ -2,12 +2,13 @@
 \setcounter{page}{0}
 % Or set 0 to 270
 \newlength{\siderulewidth}\setlength{\siderulewidth}{25pt}
-\definecolor{siderulecolor}{RGB}{0,20,150}
+\definecolor{siderulecolor}{RGB}{205,85,85}
+
 \AddToShipoutPictureBG*{% %%Only to the first page => * 
-  \AtPageUpperLeft{%
-	\rotatebox{0}{\colorbox{siderulecolor}{\makebox[\dimexpr\paperheight-2\fboxsep]{%
+  \AtPageCenter{%
+	\rotatebox{130}{\colorbox{siderulecolor}{\makebox[\dimexpr900-20\fboxsep]{%
 	  \Large
-	  \rule[-.4\baselineskip]{0pt}{1.4\baselineskip}% strut
+	  \rule[5\baselineskip]{0pt}{-3\baselineskip}% strut
 	  \textcolor{white}{}%
 	}}}
   }
@@ -17,13 +18,12 @@
   \AtTextLowerCenter{\makebox[\textwidth][r]{%
 			% \includegraphics[width=2cm,height=2cm,keepaspectratio]{logo.png}
 			\\
-			\includegraphics[scale=0.20]{./img/logomarg.png} 
+			\includegraphics[scale=.5]{./img/logomarg_op.png} 
 		}
 	
 	}
 
 }
-
 
 
 \newcommand{\HRulefill}{\noindent\makebox[\linewidth]{\rule{\paperwidth}{.1}}} % Defines a new command for the horizontal lines, change thickness here
