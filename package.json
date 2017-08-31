@@ -1,6 +1,6 @@
 {
   "name": "generator-mbf",
-  "version": "1.0.1",
+  "version": "2.1.1",
   "description": "Yeoman Generator for LaTeX MBF courses",
   "homepage": "http://mbfassas.com",
   "author": {
