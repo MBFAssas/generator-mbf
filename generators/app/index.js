@@ -240,6 +240,9 @@ module.exports = class extends Generator {
 					this.props = props;
 					this.props.docClass = answers.docClass;
 					this.props.projectNameSlug = require('lodash').kebabCase(props.projectName);
+					this.props.bib = false;
+					this.props.glossary = false;
+					this.props.figs = false;
 					this.props.projectDesc = "A MBF Letter !";
 				}.bind(this));
 			}
@@ -321,6 +324,12 @@ module.exports = class extends Generator {
 		}
 
 		if (this.props.docClass === 'letter') {
+
+			this.fs.copyTpl(
+				this.templatePath('Gruntfile.js'),
+				this.destinationPath('Gruntfile.js'),
+				this.props
+			);
 
 			this.fs.copyTpl(
 				this.templatePath('main_letter.tex'),
