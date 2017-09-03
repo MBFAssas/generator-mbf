@@ -243,6 +243,7 @@ module.exports = class extends Generator {
 					this.props.bib = false;
 					this.props.glossary = false;
 					this.props.figs = false;
+					this.props.projectUrl = "";
 					this.props.projectDesc = "A MBF Letter !";
 				}.bind(this));
 			}
